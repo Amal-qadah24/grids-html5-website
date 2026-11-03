@@ -1,0 +1,187 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration | Amal Qadah</title>
+  <meta name="description" content="Create an account using the registration form.">
+</head>
+<body>
+
+  <header>
+    <h1>Create Your Account</h1>
+    <p>Join our community by completing the registration form.</p>
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="registration.html" aria-current="page">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Registration Form</h2>
+
+      <form action="#" method="get">
+
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <p>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first_name"
+                   placeholder="Enter first name"
+                   required minlength="2" maxlength="30">
+          </p>
+
+          <p>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last_name"
+                   placeholder="Enter last name"
+                   required minlength="2" maxlength="30">
+          </p>
+
+          <p>
+            <label for="birth-date">Date of Birth:</label>
+            <input type="date" id="birth-date" name="birth_date"
+                   required>
+          </p>
+
+          <p>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age"
+                   min="16" max="100" required>
+          </p>
+
+          <p>Gender:</p>
+
+          <input type="radio" id="female" name="gender"
+                 value="female" required>
+          <label for="female">Female</label>
+
+          <input type="radio" id="male" name="gender"
+                 value="male">
+          <label for="male">Male</label>
+
+          <input type="radio" id="other" name="gender"
+                 value="other">
+          <label for="other">Other</label>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Information</legend>
+
+          <p>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="example@email.com"
+                   required>
+          </p>
+
+          <p>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"
+                   required minlength="4" maxlength="20"
+                   pattern="[A-Za-z0-9_]+"
+                   title="Use English letters, numbers or underscores only.">
+          </p>
+
+          <p>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"
+                   required minlength="8"
+                   placeholder="At least 8 characters">
+          </p>
+
+          <p>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password"
+                   name="confirm_password"
+                   required minlength="8">
+          </p>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Information</legend>
+
+          <p>
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+              <option value="">Select your country</option>
+              <option value="palestine">Palestine</option>
+              <option value="jordan">Jordan</option>
+              <option value="egypt">Egypt</option>
+              <option value="other">Other</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="interests">Your Interests:</label>
+          </p>
+
+          <input type="checkbox" id="web" name="interests"
+                 value="web-development">
+          <label for="web">Web Development</label>
+
+          <input type="checkbox" id="ai" name="interests"
+                 value="artificial-intelligence">
+          <label for="ai">Artificial Intelligence</label>
+
+          <input type="checkbox" id="cyber" name="interests"
+                 value="cybersecurity">
+          <label for="cyber">Cybersecurity</label>
+
+          <p>
+            <label for="bio">Short Biography:</label>
+            <textarea id="bio" name="bio"
+                      rows="4" cols="40"
+                      maxlength="300"
+                      placeholder="Tell us about yourself..."></textarea>
+          </p>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Terms and Conditions</legend>
+
+          <input type="checkbox" id="terms" name="terms"
+                 value="accepted" required>
+          <label for="terms">
+            I agree to the Terms and Conditions.
+          </label>
+
+        </fieldset>
+
+        <p>
+          <button type="submit">Create Account</button>
+          <button type="reset">Reset Form</button>
+        </p>
+
+      </form>
+    </section>
+
+    <section>
+      <h2>Already Registered?</h2>
+      <p><a href="contact.html">Contact us for assistance.</a></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Amal Qadah.</p>
+    <p><a href="index.html">Back to Home</a></p>
+  </footer>
+
+</body>
+</html>
