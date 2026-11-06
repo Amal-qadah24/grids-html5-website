@@ -1,0 +1,746 @@
+
+/* =========================================
+   DAY 03 - CSS Foundations
+   Grids Apps Full Stack Web Development
+   Theme: Dark Violet / Mauve / Peach
+========================================= */
+
+
+/* =========================================
+   1. DESIGN TOKENS
+========================================= */
+
+:root {
+    /* Color Palette */
+    --violet-dark: #502D55;
+    --mauve: #935073;
+    --peach: #F6DBC0;
+    --cream: #F8F4E9;
+
+    /* Background Colors */
+    --background: #160F19;
+    --surface: #211725;
+    --surface-light: #2D2031;
+
+    /* Text Colors */
+    --text-primary: var(--cream);
+    --text-secondary: #C5B7C8;
+
+    /* Border */
+    --border: rgba(246, 219, 192, 0.13);
+
+    /* Spacing System */
+    --space-xs: 8px;
+    --space-sm: 12px;
+    --space-md: 20px;
+    --space-lg: 30px;
+    --space-xl: 40px;
+    --space-2xl: 60px;
+
+    /* Layout */
+    --container-width: 1100px;
+
+    /* Border Radius */
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 20px;
+
+    /* Typography */
+    --font-main: Arial, Helvetica, sans-serif;
+
+    /* Effects */
+    --transition: 0.3s ease;
+}
+
+
+/* =========================================
+   2. RESET & BOX MODEL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/* =========================================
+   3. BODY & GENERAL STYLES
+========================================= */
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--background);
+    color: var(--text-primary);
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: var(--peach);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--mauve);
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.3;
+}
+
+p {
+    color: var(--text-secondary);
+    margin-bottom: var(--space-md);
+}
+
+
+/* =========================================
+   4. HEADER & NAVIGATION
+========================================= */
+
+header {
+    background-color: var(--surface);
+    padding: 25px 8%;
+    border-bottom: 1px solid var(--border);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+}
+
+header h1 {
+    color: var(--peach);
+    font-size: 1.7rem;
+}
+
+header > p {
+    color: var(--peach);
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+header > p a {
+    color: var(--peach);
+}
+
+header > p a:hover {
+    color: var(--mauve);
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: var(--space-lg);
+    flex-wrap: wrap;
+}
+
+header nav a {
+    color: var(--cream);
+    font-size: 0.95rem;
+}
+
+header nav a:hover {
+    color: var(--peach);
+}
+
+
+/* =========================================
+   5. MAIN CONTAINER
+========================================= */
+
+main {
+    width: 84%;
+    max-width: var(--container-width);
+    margin: var(--space-2xl) auto;
+}
+
+
+/* =========================================
+   6. HERO SECTION
+========================================= */
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        var(--surface-light),
+        var(--surface)
+    );
+
+    padding: var(--space-2xl) var(--space-xl);
+    text-align: center;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.hero h1 {
+    color: var(--peach);
+    font-size: 2.5rem;
+    margin-bottom: var(--space-md);
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto var(--space-lg);
+}
+
+
+/* =========================================
+   7. SECTIONS
+========================================= */
+
+section {
+    background-color: var(--surface);
+    padding: var(--space-lg);
+    margin-bottom: var(--space-lg);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+
+    transition: var(--transition);
+}
+
+section:hover {
+    border-color: var(--mauve);
+}
+
+h2 {
+    color: var(--peach);
+    font-size: 1.8rem;
+    margin-bottom: var(--space-md);
+}
+
+h3 {
+    color: #D9A8C0;
+    font-size: 1.2rem;
+    margin: var(--space-md) 0 var(--space-sm);
+}
+
+
+/* =========================================
+   8. CARDS
+========================================= */
+
+.card {
+    background-color: var(--surface-light);
+    padding: var(--space-lg);
+    margin-top: var(--space-md);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--mauve);
+}
+
+.card h3 {
+    color: var(--peach);
+    margin-top: 0;
+}
+
+.card p {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   9. LINKS
+========================================= */
+
+main a {
+    color: var(--peach);
+}
+
+main a:hover {
+    color: #D9A8C0;
+}
+
+
+/* =========================================
+   10. LISTS
+========================================= */
+
+ul,
+ol {
+    padding-left: 25px;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-md);
+}
+
+li {
+    padding: 5px 0;
+}
+
+li::marker {
+    color: var(--mauve);
+}
+
+
+/* =========================================
+   11. FIGURE & IMAGES
+========================================= */
+
+figure {
+    margin: var(--space-lg) 0;
+    text-align: center;
+}
+
+figure img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 4px solid var(--mauve);
+    padding: 5px;
+
+    background-color: var(--surface-light);
+    margin: 0 auto;
+}
+
+figcaption {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-top: var(--space-sm);
+}
+
+
+/* =========================================
+   12. ARTICLES
+========================================= */
+
+article {
+    background-color: var(--surface-light);
+    padding: 25px;
+    border-radius: var(--radius-sm);
+    margin-top: var(--space-md);
+}
+
+article time {
+    color: var(--peach);
+    font-size: 0.9rem;
+}
+
+
+/* =========================================
+   13. ASIDE
+========================================= */
+
+aside {
+    background-color: var(--surface-light);
+    padding: var(--space-lg);
+
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+
+    margin-top: var(--space-lg);
+}
+
+aside h2 {
+    font-size: 1.4rem;
+}
+
+
+/* =========================================
+   14. DESCRIPTION LIST
+========================================= */
+
+dl {
+    margin-top: var(--space-md);
+}
+
+dt {
+    color: var(--peach);
+    font-weight: bold;
+    margin-top: var(--space-md);
+}
+
+dd {
+    color: var(--text-secondary);
+    margin-left: var(--space-md);
+}
+
+
+/* =========================================
+   15. FOOTER
+========================================= */
+
+footer {
+    background-color: var(--surface);
+    border-top: 1px solid var(--border);
+
+    text-align: center;
+    padding: var(--space-lg) 15px;
+}
+
+footer p {
+    margin-bottom: var(--space-xs);
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--peach);
+}
+
+footer a:hover {
+    color: var(--mauve);
+}
+
+
+/* =========================================
+   16. SPECIFICITY DEBUGGING CHALLENGE
+   Used to understand CSS specificity.
+========================================= */
+
+/*
+   Specificity Example:
+
+   p                   = 0,0,1
+   .description        = 0,1,0
+   #intro              = 1,0,0
+
+   The ID selector wins because it has
+   higher specificity.
+*/
+
+p.debug-text {
+    color: var(--text-secondary);
+}
+
+.debug-text {
+    color: var(--mauve);
+}
+
+#debug-intro {
+    color: var(--peach);
+}
+
+
+/* =========================================
+   17. RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 5%;
+    }
+
+    header nav ul {
+        justify-content: center;
+        gap: var(--space-md);
+    }
+
+    main {
+        width: 92%;
+        margin: var(--space-lg) auto;
+    }
+
+    section {
+        padding: 22px;
+    }
+
+    .hero {
+        padding: var(--space-xl) var(--space-md);
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    figure img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+
+/* =========================================
+   18. SMALL MOBILE SCREENS
+========================================= */
+
+@media (max-width: 480px) {
+
+    header nav ul {
+        gap: var(--space-sm);
+    }
+
+    header nav a {
+        font-size: 0.85rem;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .hero h1 {
+        font-size: 1.7rem;
+    }
+
+    .card {
+        padding: var(--space-md);
+    }
+
+}
+
+
+/* =========================================
+   DAY 03 - ADDITIONAL HTML ELEMENTS
+   Forms, Tables and Interactive Elements
+========================================= */
+
+
+/* =========================================
+   19. FORM STYLING
+========================================= */
+
+form {
+    width: 100%;
+}
+
+fieldset {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    margin-bottom: var(--space-lg);
+    background-color: var(--surface-light);
+}
+
+legend {
+    color: var(--peach);
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0 var(--space-sm);
+}
+
+label {
+    color: var(--text-primary);
+    display: inline-block;
+    margin-bottom: var(--space-xs);
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: var(--space-sm);
+    background-color: var(--surface);
+    color: var(--cream);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-main);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #A99AAD;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--mauve);
+    box-shadow: 0 0 0 3px rgba(147, 80, 115, 0.2);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    accent-color: var(--mauve);
+    margin-right: var(--space-xs);
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    display: inline;
+    margin-right: var(--space-md);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+
+/* =========================================
+   20. BUTTONS
+========================================= */
+
+button {
+    background-color: var(--mauve);
+    color: var(--cream);
+    border: none;
+    padding: 12px 25px;
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+    margin: var(--space-xs);
+}
+
+button:hover {
+    background-color: var(--violet-dark);
+    transform: translateY(-2px);
+}
+
+button:focus-visible {
+    outline: 2px solid var(--peach);
+    outline-offset: 3px;
+}
+
+
+/* =========================================
+   21. TABLE STYLING
+========================================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--space-lg) 0;
+    background-color: var(--surface-light);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+}
+
+caption {
+    color: var(--peach);
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: var(--space-md);
+}
+
+th,
+td {
+    padding: var(--space-md);
+    border: 1px solid var(--border);
+    text-align: left;
+}
+
+th {
+    background-color: var(--violet-dark);
+    color: var(--peach);
+}
+
+td {
+    color: var(--text-secondary);
+}
+
+tbody tr:hover {
+    background-color: var(--surface);
+}
+
+tfoot {
+    background-color: var(--surface);
+    color: var(--peach);
+}
+
+
+/* =========================================
+   22. DETAILS & SUMMARY
+========================================= */
+
+details {
+    background-color: var(--surface-light);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: var(--space-md);
+    margin-bottom: var(--space-md);
+    transition: var(--transition);
+}
+
+details:hover {
+    border-color: var(--mauve);
+}
+
+summary {
+    color: var(--peach);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+details p {
+    margin-top: var(--space-md);
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   23. STRONG TEXT
+========================================= */
+
+strong {
+    color: var(--peach);
+    font-weight: bold;
+}
+
+
+/* =========================================
+   24. RESPONSIVE FOR FORMS AND TABLES
+========================================= */
+
+@media (max-width: 768px) {
+
+    fieldset {
+        padding: var(--space-md);
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    th,
+    td {
+        padding: var(--space-sm);
+    }
+
+    button {
+        width: 100%;
+        margin: var(--space-xs) 0;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    table {
+        font-size: 0.75rem;
+    }
+
+    th,
+    td {
+        padding: 7px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 0.9rem;
+    }
+
+}
