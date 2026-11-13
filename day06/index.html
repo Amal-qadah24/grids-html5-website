@@ -1,0 +1,886 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TaskFlow project management platform">
+
+    <title>TaskFlow | Make Teamwork Flow</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="site-header sticky-top">
+
+        <nav class="navbar navbar-expand-xl py-3">
+
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand brand d-flex align-items-center gap-2"
+                   href="index.html">
+
+                    <span class="brand-icon">✦</span>
+
+                    <span>
+                        task<span class="brand-accent">flow</span><span class="brand-dot">.</span>
+                    </span>
+                </a>
+
+                <!-- Responsive Navbar Toggle -->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#desktopNav"
+                    aria-controls="desktopNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse" id="desktopNav">
+
+                    <ul class="navbar-nav mx-auto gap-xl-1">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html">Dashboard</a>
+                        </li>
+
+                    </ul>
+
+                    <a href="contact.html"
+                       class="btn btn-outline-brand btn-sm rounded-pill px-3">
+                        Get in touch
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main id="main">
+
+        <!-- ================= HERO SECTION ================= -->
+        <section class="hero" id="home">
+
+            <div class="container">
+
+                <div class="row align-items-center g-5 hero-row">
+
+                    <!-- Hero Content -->
+                    <div class="col-lg-6">
+
+                        <span class="eyebrow">
+                           
+                            A better way to work together
+                        </span>
+
+                        <h1 class="display-title mt-4">
+                            Great work starts with
+                            <span>better flow.</span>
+                        </h1>
+
+                        <p class="lead hero-description mt-4">
+                            Keep your projects organized, your tasks on track,
+                            and your whole team moving in the same direction
+                            — all in one calm workspace.
+                        </p>
+
+                        <div class="d-flex flex-wrap gap-3 mt-4">
+
+                            <a href="products.html" class="btn btn-brand btn-lg">
+                                Explore TaskFlow ↗
+                            </a>
+
+                            <a href="contact.html" class="btn btn-ghost btn-lg">
+                                Contact us →
+                            </a>
+
+                        </div>
+
+                        <div class="hero-notes d-flex flex-wrap gap-4 mt-4">
+
+                            <span>✓ Easy to organize</span>
+                            <span>✓ Built for teamwork</span>
+                            <span>✓ Responsive by design</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Hero Dashboard Preview -->
+                    <div class="col-lg-6">
+
+                        <div class="dashboard-scene">
+
+                            <div class="dashboard-window shadow-lg">
+
+                                <!-- Sidebar -->
+                                <aside class="dash-sidebar">
+
+                                    <div class="dash-logo">✦</div>
+                                    <div class="dash-side-item selected">▦</div>
+                                    <div class="dash-side-item">☰</div>
+                                    <div class="dash-side-item">◷</div>
+                                    <div class="dash-side-item">⚙</div>
+
+                                </aside>
+
+                                <!-- Dashboard Content -->
+                                <div class="dash-content">
+
+                                    <div class="dash-top d-flex justify-content-between align-items-center">
+                                        <span class="dash-breadcrumb">
+                                            Workspace / Overview
+                                        </span>
+
+                                        <span class="dash-avatar">TF</span>
+                                    </div>
+
+                                    <div class="mt-4">
+
+                                        <span class="dash-hello">
+                                            Team workspace
+                                        </span>
+
+                                        <h2 class="dash-title">
+                                            Team overview ✳
+                                        </h2>
+
+                                    </div>
+
+                                    <!-- Dashboard KPI Cards -->
+                                    <div class="row g-2 mt-2">
+
+                                        <div class="col-4">
+                                            <div class="metric">
+                                                <span>Projects</span>
+                                                <strong>12</strong>
+                                                <small>+2 this month</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-4">
+                                            <div class="metric">
+                                                <span>In progress</span>
+                                                <strong>28</strong>
+                                                <small>Active tasks</small>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-4">
+                                            <div class="metric">
+                                                <span>Completed</span>
+                                                <strong>84%</strong>
+                                                <small>On track</small>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <!-- Project Progress -->
+                                    <div class="dash-panel mt-3">
+
+                                        <strong>Project progress</strong>
+
+                                        <div class="dash-project mt-3">
+
+                                            <div class="d-flex justify-content-between">
+                                                <span>Website redesign</span>
+                                                <span>75%</span>
+                                            </div>
+
+                                            <div class="progress">
+                                                <div
+                                                    class="progress-bar progress-peach"
+                                                    style="width: 75%">
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="dash-project mt-3">
+
+                                            <div class="d-flex justify-content-between">
+                                                <span>Mobile app launch</span>
+                                                <span>48%</span>
+                                            </div>
+
+                                            <div class="progress">
+                                                <div
+                                                    class="progress-bar progress-pink"
+                                                    style="width: 48%">
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="dash-project mt-3">
+
+                                            <div class="d-flex justify-content-between">
+                                                <span>Brand identity</span>
+                                                <span>92%</span>
+                                            </div>
+
+                                            <div class="progress">
+                                                <div
+                                                    class="progress-bar progress-lilac"
+                                                    style="width: 92%">
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="float-card">
+                                <span class="check-bubble">✓</span>
+
+                                <span>
+                                    <strong>Task completed!</strong>
+                                    <small>You're making progress</small>
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TRUST SECTION ================= -->
+        <section class="trust-strip">
+
+            <div class="container text-center">
+
+                <p class="text-small mb-3">
+                    THOUGHTFULLY DESIGNED FOR THE WAY TEAMS WORK
+                </p>
+
+                <div class="d-flex flex-wrap justify-content-center gap-4 gap-md-5 trust-items">
+
+                    <span>✳ Organize</span>
+                    <span>◈ Collaborate</span>
+                    <span>▤ Track</span>
+                    <span>✦ Deliver</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURES CARD GRID ================= -->
+        <section class="section-pad" id="features">
+
+            <div class="container">
+
+                <div class="row align-items-end g-3 mb-5">
+
+                    <div class="col-lg-7">
+
+                        <span class="section-kicker">
+                            WHY TASKFLOW
+                        </span>
+
+                        <h2 class="section-title mt-3">
+                            Less busywork.
+                            <br>
+                            <span>More brilliant work.</span>
+                        </h2>
+
+                    </div>
+
+                    <div class="col-lg-5">
+
+                        <p class="section-intro mb-0">
+                            From your first idea to the final checkmark,
+                            TaskFlow keeps everything clear, connected,
+                            and under control.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Bootstrap Responsive Grid -->
+                <div class="row g-4">
+
+                    <!-- Feature Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+
+                        <article class="feature-card h-100">
+
+                            <div class="feature-icon lilac">▦</div>
+
+                            <h3>Projects, simplified</h3>
+
+                            <p>
+                                Bring all your projects into one organized
+                                space so you always know what's happening next.
+                            </p>
+
+                            <a href="products.html">
+                                See how it works ↗
+                            </a>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- Feature Card 2 -->
+                    <div class="col-md-6 col-lg-4">
+
+                        <article class="feature-card h-100">
+
+                            <div class="feature-icon rose">✓</div>
+
+                            <h3>Tasks that make sense</h3>
+
+                            <p>
+                                Break big goals into manageable steps
+                                and stay focused on what matters most.
+                            </p>
+
+                            <a href="products.html">
+                                See how it works ↗
+                            </a>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- Feature Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+
+                        <article class="feature-card h-100">
+
+                            <div class="feature-icon peach">◎</div>
+
+                            <h3>Better team alignment</h3>
+
+                            <p>
+                                Make collaboration feel effortless
+                                with shared updates, clear priorities,
+                                and visible progress.
+                            </p>
+
+                            <a href="products.html">
+                                See how it works ↗
+                            </a>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PRODUCT SECTION ================= -->
+        <section class="section-pad product-section" id="product">
+
+            <div class="container">
+
+                <div class="row align-items-center g-5">
+
+                    <!-- Task Preview -->
+                    <div class="col-lg-6">
+
+                        <div class="workflow-card">
+
+                            <div class="workflow-top">
+                                <span class="workflow-badge">
+                                    ✦ Your workspace
+                                </span>
+                                <span class="workflow-menu">•••</span>
+                            </div>
+
+                            <h3>Today's priorities</h3>
+
+                            <div class="task-row">
+
+                                <span class="task-check done">✓</span>
+
+                                <div>
+                                    <strong>Review homepage wireframes</strong>
+                                    <small>Website redesign · Design</small>
+                                </div>
+
+                                <span class="task-tag">Done</span>
+
+                            </div>
+
+                            <div class="task-row">
+
+                                <span class="task-check"></span>
+
+                                <div>
+                                    <strong>Plan the product launch</strong>
+                                    <small>Marketing · Planning</small>
+                                </div>
+
+                                <span class="task-tag pink">Today</span>
+
+                            </div>
+
+                            <div class="task-row">
+
+                                <span class="task-check"></span>
+
+                                <div>
+                                    <strong>Share team feedback</strong>
+                                    <small>Internal · Collaboration</small>
+                                </div>
+
+                                <span class="task-tag lavender">Next</span>
+
+                            </div>
+
+                            <div class="workflow-bottom">
+                                ✳ One place for every next step.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product Description -->
+                    <div class="col-lg-6">
+
+                        <span class="section-kicker">
+                            BUILT FOR CLARITY
+                        </span>
+
+                        <h2 class="section-title mt-3">
+                            Your plans.
+                            <br>
+                            <span>All in one place.</span>
+                        </h2>
+
+                        <p class="section-intro mt-3">
+                            A scattered to-do list slows everyone down.
+                            TaskFlow gives your work a shared home
+                            with thoughtful views for projects,
+                            tasks, and progress.
+                        </p>
+
+                        <ul class="benefit-list mt-4">
+
+                            <li>
+                                <span>✓</span>
+                                See the big picture at a glance
+                            </li>
+
+                            <li>
+                                <span>✓</span>
+                                Keep deadlines and priorities visible
+                            </li>
+
+                            <li>
+                                <span>✓</span>
+                                Turn team goals into action
+                            </li>
+
+                        </ul>
+
+                        <a href="pricing.html" class="btn btn-brand mt-3">
+                            Discover plans ↗
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PRICING PREVIEW ================= -->
+        <section class="section-pad" id="pricing">
+
+            <div class="container">
+
+                <div class="text-center mb-5">
+
+                    <span class="section-kicker">
+                        SIMPLE PRICING
+                    </span>
+
+                    <h2 class="section-title mt-3">
+                        Room for every <span>big idea.</span>
+                    </h2>
+
+                    <p class="section-intro mx-auto mt-3">
+                        Illustrative plans for the TaskFlow concept.
+                        No payments are collected on this demo site.
+                    </p>
+
+                </div>
+
+
+                <div class="row g-4 justify-content-center">
+
+                    <!-- Starter Plan -->
+                    <div class="col-md-6 col-lg-4">
+
+                        <article class="price-card h-100">
+
+                            <span class="plan-label">STARTER</span>
+
+                            <h3>For individuals</h3>
+
+                            <p>Get your ideas organized.</p>
+
+                            <div class="plan-price">
+                                $0 <span>/ month</span>
+                            </div>
+
+                            <ul>
+                                <li>✓ Up to 3 projects</li>
+                                <li>✓ Task boards</li>
+                                <li>✓ Basic progress tracking</li>
+                            </ul>
+
+                            <a href="contact.html" class="btn btn-outline-brand">
+                                Ask about this plan
+                            </a>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- Team Plan -->
+                    <div class="col-md-6 col-lg-4">
+
+                        <article class="price-card featured h-100">
+
+                            <span class="popular-badge">
+                                MOST POPULAR
+                            </span>
+
+                            <span class="plan-label">TEAM</span>
+
+                            <h3>For growing teams</h3>
+
+                            <p>Bring everyone together.</p>
+
+                            <div class="plan-price">
+                                $12 <span>/ user / month</span>
+                            </div>
+
+                            <ul>
+                                <li>✓ Unlimited projects</li>
+                                <li>✓ Team collaboration</li>
+                                <li>✓ Dashboard insights</li>
+                            </ul>
+
+                            <a href="contact.html" class="btn btn-brand">
+                                Ask about this plan
+                            </a>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- Business Plan -->
+                    <div class="col-md-6 col-lg-4">
+
+                        <article class="price-card h-100">
+
+                            <span class="plan-label">BUSINESS</span>
+
+                            <h3>For bigger goals</h3>
+
+                            <p>Scale your processes.</p>
+
+                            <div class="plan-price">
+                                Custom
+                            </div>
+
+                            <ul>
+                                <li>✓ Advanced reporting</li>
+                                <li>✓ Custom workflows</li>
+                                <li>✓ Priority support concept</li>
+                            </ul>
+
+                            <a href="contact.html" class="btn btn-outline-brand">
+                                Contact us
+                            </a>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FAQ SECTION ================= -->
+        <!-- Static content only, no Bootstrap Accordion -->
+        <section class="section-pad faq-section" id="faq">
+
+            <div class="container">
+
+                <div class="row g-5">
+
+                    <div class="col-lg-5">
+
+                        <span class="section-kicker">
+                            GOOD TO KNOW
+                        </span>
+
+                        <h2 class="section-title mt-3">
+                            Questions?
+                            <br>
+                            <span>We've got answers.</span>
+                        </h2>
+
+                        <p class="section-intro mt-3">
+                            Everything you need to know about this
+                            TaskFlow website concept.
+                        </p>
+
+                    </div>
+
+
+                    <div class="col-lg-7">
+
+                        <div class="row g-3">
+
+                            <div class="col-12">
+
+                                <article class="feature-card h-100">
+
+                                    <h3 class="fs-5">What is TaskFlow?</h3>
+
+                                    <p>
+                                        TaskFlow is a sample project-management
+                                        platform concept created as part of
+                                        a web-development learning project.
+                                    </p>
+
+                                </article>
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <article class="feature-card h-100">
+
+                                    <h3 class="fs-5">
+                                        Can I create a real account?
+                                    </h3>
+
+                                    <p>
+                                        Not yet. This homepage is a front-end
+                                        prototype without real user accounts.
+                                    </p>
+
+                                </article>
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <article class="feature-card h-100">
+
+                                    <h3 class="fs-5">
+                                        What does the dashboard show?
+                                    </h3>
+
+                                    <p>
+                                        The dashboard uses example data
+                                        and is not connected to a database.
+                                    </p>
+
+                                </article>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT CTA ================= -->
+        <section class="section-pad cta-section" id="contact">
+
+            <div class="container">
+
+                <div class="cta-card text-center">
+
+                    <span class="section-kicker">
+                        LET'S MAKE PROGRESS
+                    </span>
+
+                    <h2 class="section-title mt-3">
+                        Good things happen
+                        <br>
+                        <span>when work flows.</span>
+                    </h2>
+
+                    <p class="section-intro mx-auto mt-3">
+                        Have a question or want to see how the concept
+                        could grow? Send us a demo inquiry.
+                    </p>
+
+                    <a href="contact.html" class="btn btn-brand btn-lg mt-3">
+                        Get in touch ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="row g-4 justify-content-between">
+
+                <div class="col-lg-5">
+
+                    <a href="index.html" class="brand text-decoration-none">
+                        ✦ task<span class="brand-accent">flow</span>.
+                    </a>
+
+                    <p class="footer-note mt-2 mb-0">
+                        A project-management platform concept
+                        made for a Bootstrap internship workbook.
+                    </p>
+
+                </div>
+
+
+                <div class="col-lg-7">
+
+                    <nav
+                        class="d-flex flex-wrap justify-content-lg-end gap-3 footer-links"
+                        aria-label="Footer navigation"
+                    >
+                        <a href="about.html">About</a>
+                        <a href="services.html">Services</a>
+                        <a href="products.html">Products</a>
+                        <a href="pricing.html">Pricing</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="dashboard.html">Dashboard</a>
+                    </nav>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <p class="footer-note mb-0">
+                © 2026 TaskFlow. Internship frontend demonstration —
+                no live accounts or payments.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <!-- Bootstrap JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+</body>
+</html>
