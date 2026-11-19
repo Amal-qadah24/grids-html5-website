@@ -10,6 +10,7 @@
 - [Day 04:Flexbox, Grid & Responsive Design](day04/)
 - [DAY 06 - Bootstrap Setup, Grid & Utilities](day06/)
 - [DAY 07 - Bootstrap Components, Forms & Interaction](day07/)
+- [DAY 08 - Bootstrap Final Website](day08/)
 ## Author
 
 Amal Qadah
