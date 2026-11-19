@@ -9,6 +9,7 @@
 - [Day 03: Advanced CSS3 & Vintage Theme Design](day03/)
 - [Day 04:Flexbox, Grid & Responsive Design](day04/)
 - [DAY 06 - Bootstrap Setup, Grid & Utilities](day06/)
+- [DAY 07 - Bootstrap Components, Forms & Interaction](day07/)
 ## Author
 
 Amal Qadah
